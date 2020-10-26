@@ -1,0 +1,52 @@
+.Resume {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 24px;
+}
+
+.Resume--title {
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+.Resume--details {
+  grid-column: 1 / 13;
+}
+
+.Resume--details--key-value {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px
+}
+
+.Resume--details--key-value p:nth-child(1) {
+  justify-self: end;
+  font-weight: 800;
+}
+
+.Resume--qr {
+  grid-column: 1 / 13;
+  justify-content: center;
+}
+
+.Resume--qr div {
+  display: grid;
+  justify-content: center;
+}
+
+.Resume--qr img {
+  width: 150px;
+}
+
+.Resume--btn {
+  grid-column: 1 / 13;
+  justify-self: center;
+}
+
+.Resume--btn button {
+  background: crimson;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 12px;
+  color: white;
+}
